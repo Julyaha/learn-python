@@ -1,11 +1,18 @@
 # Example function
 print("---")
 
-def fib(x):
+def factorial(x):
   if x <= 1:
     return 1
-  return x * fib(x-1)
+  return x * factorial(x-1)
+
+  
+def sqrt(x, y = 0.5):
+  return x ** y
+
+
 
 y = int(input("Input number: "))
-f = fib(y)
+f = factorial(y)
 print (str(y) + "!", "=", f)
+print ("Square root:", sqrt(y))
